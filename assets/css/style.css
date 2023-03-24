@@ -1,6 +1,47 @@
-* {
-  box-sizing: border-box;
+:root {
+  --background-color: gray;
+  --font-style: system-ui;
+  --font-size: 20px;
+  --font-size-large: 40px;
+  --border-dashed: dashed;
+  --border-solid: solid;
 }
+* {
+    font-style: var(--font-style);
+    font-size: var(--font-size);
+}
+nav h1 {
+    font-size: var(--font-size-large);
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    flex-basis: 33%;
+    justify-content: space-around;
+    border-style: var(--border-solid);
+}
+.row-child {
+    border-style: var(--border-solid);
+}
+.row-child h2 {
+    border-style: var(--border-solid);
+}
+.row-child pre {
+    border-style: var(--border-solid);
+}
+
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+
 header {
   display: grid;
   place-items: center;
