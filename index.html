@@ -2,72 +2,82 @@
 <html>
 
 <head>
-  <title>Jen Butler Portfolio | IT Professional | Developer</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Jen Butler Portfolio | IT Professional | Developer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
+<!-- Body -->
 
 <body>
-  <!-- Header and Navbar -->
-  <nav class="navbar">
-    <header>
-      <h1>Jen Butler</h1>
-    </header>
-    <span class="navbar-toggle" id="js-navbar-toggle">
-        <i class="fa-solid fa-bars" style="color: #000000;"></i>
+    <!-- Header and Navbar -->
+    <nav class="navbar">
+        <header>
+            <h1>Jen Butler</h1>
+        </header>
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fa-solid fa-bars" style="color: #000000;"></i>
         </span>
-    <ul class="main-nav" id="js-menu">
-      <li><a href="#" class="nav-links">Home</a></li>
-      <li><a href="#" class="nav-links">Projects</a></li>
-      <li><a href="#" class="nav-links">About Me</a></li>
-      <li><a href="#" class="nav-links">Contact Me</a></li>
-      <li><a href="#" class="nav-links">Blog</a></li>
-    </ul>
-  </nav>
+        <ul class="main-nav" id="js-menu">
+            <li><a href="#projects" class="nav-links">Home</a></li>
+            <li><a href="#" class="nav-links">Projects</a></li>
+            <li><a href="#" class="nav-links">About Me</a></li>
+            <li><a href="#" class="nav-links">Contact Me</a></li>
+            <li><a href="#" class="nav-links">Blog</a></li>
+        </ul>
+    </nav>
 
-  <!-- Body -->
- <body>
-    <main>
-        <section class="row">
-            <section class="row-child">
-                <h2>Flexbox Row</h2>
-                <p>Use these three properties to create a flexbox row layout.</p>
-                <pre>.row {
+    <section class="row-parent">
+        <aside class="row-aside">
+            <ul>
+                <li id="projects">Projects</li>
+                <li>About Me</li>
+                <li>Contact Me</li>
+                <li>Blog</li>
+            </ul>
+        </aside>
+        <main>
+            <section class="row">
+                <section class="row-child">
+                    <h2>Flexbox Row</h2>
+                    <p>Use these three properties to create a flexbox row layout.</p>
+                    <pre>.row {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
         }
         </pre>
-            </section>
-            <section class="row-child">
-                <h2>Flexbox Column</h2>
-                <p>Use this to create a flexbox column layout.</p>
-                <pre>.row {
+                </section>
+                <section class="row-child">
+                    <h2>Flexbox Column</h2>
+                    <p>Use this to create a flexbox column layout.</p>
+                    <pre>.row {
             display: flex;
             flex-direction: column;
         }
         </pre>
-            </section>
-            <section class="row-child">
-                <h2>CSS Grid Layout</h2>
-                <p>Build a 12-column layout using CSS Grid</p>
-                <pre>.row {
+                </section>
+                <section class="row-child">
+                    <h2>CSS Grid Layout</h2>
+                    <p>Build a 12-column layout using CSS Grid</p>
+                    <pre>.row {
             display: grid;
             width: 100%;
             grid-template-columns:
         repeat(12, 1fr);
         }
         </pre>
+                </section>
             </section>
-        </section>
-    </main>
-
+        </main>
+    </section>
     <footer>
         <span></span>
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/c8c696bf68.js" crossorigin="anonymous"></script>
 <script src="./assets/scripts/scripts.js"></script>
+
 </html>
