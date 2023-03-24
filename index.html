@@ -29,44 +29,51 @@
   </nav>
 
   <!-- Body -->
-  <main class="box-grid">
-    <!-- Product Cards -->
-    <section >
-      <aside class="aside-flex">
-        <h2>The product cards would look better if...</h2>
-        <li>the corners were rounded out</li>
-        <li>there was a shadow</li>
-        <li>they were rotated slightly</li>
-      </aside>
-      <section class="box-flex box-flex-center-left">
-        <img class="box-img" src="./assets/images/html.jpg" alt="black camera" />
-        <h4 class="box-caption">HTML</h4>
-      </section>
-      <section class="box-flex box-flex-center-left">
-        <img class="box-img" src="./assets/images/css.jpg" alt="tablet held in hands" />
-        <h4 class="box-caption">CSS</h4>
-      </section>
-      <section class="box-flex box-flex-center-left">
-        <img class="box-img" src="./assets/images/css.jpg" alt="tablet held in hands" />
-        <h4 class="box-caption">CSS</h4>
-      </section>
-      <section class="box-flex box-flex-center-left">
-        <img class="box-img" src="./assets/images/css.jpg" alt="tablet held in hands" />
-        <h4 class="box-caption">CSS</h4>
-      </section>
-      <section class="box-flex box-flex-center-left">
-        <img class="box-img" src="./assets/images/css.jpg" alt="tablet held in hands" />
-        <h4 class="box-caption">CSS</h4>
-      </section>
-    </section>
-  </main>
+ <body>
+    <header>
+        <nav>
+            <h1>CSS Snippet Cheatsheet</h1>
+            <p>Ever have trouble recalling the syntax of your CSS code?</p>
+        </nav>
+    </header>
+    <main>
+        <section class="row">
+            <section class="row-child">
+                <h2>Flexbox Row</h2>
+                <p>Use these three properties to create a flexbox row layout.</p>
+                <pre>.row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        </pre>
+            </section>
+            <section class="row-child">
+                <h2>Flexbox Column</h2>
+                <p>Use this to create a flexbox column layout.</p>
+                <pre>.row {
+            display: flex;
+            flex-direction: column;
+        }
+        </pre>
+            </section>
+            <section class="row-child">
+                <h2>CSS Grid Layout</h2>
+                <p>Build a 12-column layout using CSS Grid</p>
+                <pre>.row {
+            display: grid;
+            width: 100%;
+            grid-template-columns:
+        repeat(12, 1fr);
+        }
+        </pre>
+            </section>
+        </section>
+    </main>
 
-  <!-- Footer -->
-  <footer>
-    <h3>
-
-    </h3>
-  </footer>
+    <footer>
+        <span></span>
+    </footer>
 </body>
 <script src="./assets/scripts/scripts.js"></script>
 
