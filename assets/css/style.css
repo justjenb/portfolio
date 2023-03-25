@@ -33,15 +33,16 @@ body h1 {
   color: transparent;
 }
 .navbar {
+  display: flex;
   font-size: 18px;
-  padding-bottom: 10px;
   position: relative;
   font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
 }
 .main-nav {
   list-style-type: none;
   display: none;
-  white-space: nowrap;
 }
 .main-nav li {
   text-align: center;
@@ -52,30 +53,21 @@ body h1 {
 .logo {
   text-decoration: none;
 }
-.navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-  font-size: 24px;
-}
-.logo {
-  display: inline-block;
-  font-size: 22px;
-  margin-bottom: 20px;
-  margin-top: 10px;
+.logo:hover,
+.nav-links:hover,
+.aside-nav-links:hover {
+  color: #046b99;
 }
 .active {
   display: block;
 }
-.row {
-  border-style: var(--border-solid);
-  display: flex;
-  flex-direction: row;
-  flex-grow:1;
-  flex-wrap: wrap;
-  margin: 10px;
+.row-parent {
   padding: 10px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  border-style: var(--border-solid);
 }
 .row-child {
   align-content: center;
@@ -133,6 +125,13 @@ body h1 {
     .row-aside {
       display:none;
     }
+    .navbar-toggle {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 24px;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -166,6 +165,9 @@ body h1 {
     .row-aside ul li {
       padding-bottom: 10px;
     }
+    .row-parent {
+      margin-left: 150px;
+    }
     .about-me {
       margin: 10px;
       padding: 10px;
@@ -193,12 +195,9 @@ body h1 {
       height: 100%;
       max-width: 25%;
     }
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 0;
-      height: 70px;
-      align-items: center;
+    /*Toggles burger icon when screen is larger than 768px*/
+    .navbar-toggle {
+      display: none;
     }
     .main-nav {
       display: flex;
@@ -212,25 +211,7 @@ body h1 {
     .nav-links {
       margin-left: 40px;
     }
-    .aside-nav-links {
-      margin-left: 0px;
-    }
-    .navbar-toggle {
-      display: none;
-    }
-    .logo:hover,
-    .nav-links:hover {
-      color: #046b99;
-    }
-    .row-parent {
-      margin-left: 150px;
-      padding: 10px;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      flex-grow: 2;
-      border-style: var(--border-solid);
-    }
+
   }
   @media screen and (max-width: 768px) {
     .sidebar {
