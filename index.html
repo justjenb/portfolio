@@ -2,9 +2,9 @@
 <html>
 
 <head>
-    <title>Jen Butler Portfolio | IT Professional | Developer</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jen Butler Portfolio | IT Professional | Developer</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -15,31 +15,43 @@
     <!-- Header and Navbar -->
     <nav class="navbar">
         <header>
-            <h1>Jen Butler</h1>
+            <h1 class="header-gradient">Jen Butler</h1>
         </header>
         <span class="navbar-toggle" id="js-navbar-toggle">
             <i class="fa-solid fa-bars" style="color: #000000;"></i>
         </span>
         <ul class="main-nav" id="js-menu">
             <li><a href="#projects" class="nav-links">Home</a></li>
-            <li><a href="#" class="nav-links">Projects</a></li>
-            <li><a href="#" class="nav-links">About Me</a></li>
-            <li><a href="#" class="nav-links">Contact Me</a></li>
-            <li><a href="#" class="nav-links">Blog</a></li>
+            <li><a href="#projects" class="nav-links">Projects</a></li>
+            <li><a href="#aboutme" class="nav-links">About Me</a></li>
+            <li><a href="#contactme" class="nav-links">Contact Me</a></li>
+            <li><a href="#blog" class="nav-links">Blog</a></li>
         </ul>
     </nav>
+    <main>
+        <section class="row-parent">
+            <aside class="row-aside">
+                <ul>
+                    <li><a href="#projects" class="aside-nav-links">Home</a></li>
+                    <li><a href="#projects" class="aside-nav-links">Projects</a></li>
+                    <li><a href="#aboutme" class="aside-nav-links">About Me</a></li>
+                    <li><a href="#contactme" class="aside-nav-links">Contact Me</a></li>
+                    <li><a href="#blog" class="aside-nav-links">Blog</a></li>
+                </ul>
+            </aside>
+            <section class="about-me">
+                <section class="about-me-p-border">
+                    <p>About Me</p>
+                </section>
+                <p class="about-me-p-content">As an IT professional with a decade of diverse experience, I am passionate
+                    about leveraging
+                    technology to drive efficiency, optimize performance, and deliver exceptional results. My background
+                    spans a wide range of disciplines, including but not limited to Microsoft 365 and cloud services
+                    management, network management, server construction, and with extensive troubleshooting experience,
+                    I have a solid foundation to excel in the ever-evolving tech landscape.</p>
+            </section>
+            <section class="project-rows">
 
-    <section class="row-parent">
-        <aside class="row-aside">
-            <ul>
-                <li id="projects">Projects</li>
-                <li>About Me</li>
-                <li>Contact Me</li>
-                <li>Blog</li>
-            </ul>
-        </aside>
-        <main class="project-rows">
-            <section class="row">
                 <section class="row-child">
                     <h2>Flexbox Row</h2>
                     <p>Use these three properties to create a flexbox row layout.</p>
@@ -47,8 +59,7 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-        }
-        </pre>
+        }</pre>
                 </section>
                 <section class="row-child">
                     <h2>Flexbox Column</h2>
@@ -56,8 +67,7 @@
                     <pre>.row {
             display: flex;
             flex-direction: column;
-        }
-        </pre>
+        }</pre>
                 </section>
                 <section class="row-child">
                     <h2>CSS Grid Layout</h2>
@@ -67,12 +77,38 @@
             width: 100%;
             grid-template-columns:
         repeat(12, 1fr);
-        }
-        </pre>
+        }</pre>
+                </section>
+                <section class="row-child">
+                    <h2>Flexbox Column</h2>
+                    <p>Use this to create a flexbox column layout.</p>
+                    <pre>.row {
+            display: flex;
+            flex-direction: column;
+        }</pre>
+                </section>
+                <section class="row-child">
+                    <h2>Flexbox Column</h2>
+                    <p>Use this to create a flexbox column layout.</p>
+                    <pre>.row {
+            display: flex;
+            flex-direction: column;
+        }</pre>
+                </section>
+                <section class="row-child">
+                    <h2>Flexbox Column</h2>
+                    <p>Use this to create a flexbox column layout.</p>
+                    <pre>.row {
+            display: flex;
+            flex-direction: column;
+        }</pre>
                 </section>
             </section>
-        </main>
-    </section>
+        </section>
+        <section class="contact-me">
+
+        </section>
+    </main>
     <footer>
         <span></span>
     </footer>

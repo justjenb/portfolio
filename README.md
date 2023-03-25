@@ -41,6 +41,8 @@ Reused misc. code from previous projects (see Projects listed in this project) f
 [Photo](https://unsplash.com/photos/_t-l5FFH8VA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) by [Jackson Sophat](https://unsplash.com/@jacksonsophat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com)
 
 [Photo](https://unsplash.com/photos/6JVlSdgMacE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) by [Pankaj Patel](https://unsplash.com/@pankajpatel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com)
+
+Logo icon from [Cloud computing icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/cloud-computing)
     
 
 ## License
