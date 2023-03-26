@@ -34,6 +34,8 @@ Tutorial credit for responsive mobile menu to [ITNEXT](https://itnext.io/how-to-
 
 Tutorial credit for text overlay on an image to [IMarketINX](https://www.imarketinx.de/artikel/text-centered-on-image.html)
 
+Tutorial credit for hiding the About Me section on mobile devices or small screens [CodeWellTech](https://www.youtube.com/watch?v=kSEdMoZEGjI)
+
 Menu bar icon from [Font Awesome](https://fontawesome.com/)
 
 Reused misc. code from previous projects (see Projects listed in this project) for .card display and flexbox formatting
@@ -42,8 +44,6 @@ Reused misc. code from previous projects (see Projects listed in this project) f
 
 [Photo](https://unsplash.com/photos/6JVlSdgMacE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) by [Pankaj Patel](https://unsplash.com/@pankajpatel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com)
 
-Logo icon from [Cloud computing icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/cloud-computing)
-    
 
 ## License
 

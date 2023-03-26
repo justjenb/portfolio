@@ -1,3 +1,4 @@
+/* Root / universal / some body settings */
 :root {
   --background-color: gray;
   --font-style: system-ui;
@@ -8,30 +9,34 @@
   --border-outset: outset;
 }
 * {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   font-style: var(--font-style);
   font-size: var(--font-size);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   box-sizing: border-box;
-  color: #0B1418;
+  color: #0b1418;
 }
 body {
   width: 100%;
   height: auto;
   max-width: 100%;
-  background: linear-gradient(to left, #a8dadc, #eee 0%, #5496B1 100%);
+  background: linear-gradient(to left, #a8dadc, #eee 0%, #5496b1 100%);
 }
-body h1 {
+/* Set no wrap for header h1 element */
+header h1 {
   white-space: nowrap;
 }
+/* Set gradient coloring for class targeting the h1 element */
 .header-gradient {
   font-size: 48px;
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: linear-gradient(60deg, #0B1418, #38677A);
+  background-image: linear-gradient(60deg, #0b1418, #38677a);
   color: transparent;
 }
+/* Nav element base settings */
 .navbar {
   display: flex;
   font-size: 18px;
@@ -40,277 +45,177 @@ body h1 {
   justify-content: space-between;
   align-items: center;
 }
-.main-nav {
-  list-style-type: none;
-  display: none;
-}
-.main-nav li {
-  text-align: center;
-  margin: 15px auto;
-}
+/* Targeting the ul main nav links on the top of the page with some formatting */
 .nav-links,
-.aside-nav-links,
-.logo {
+.aside-nav-links {
   text-decoration: none;
 }
-.logo:hover,
 .nav-links:hover,
 .aside-nav-links:hover {
   color: #046b99;
 }
-.active {
-  display: block;
-}
+/* Starting to format the main section with the aside, about me, project etc.
+Some addl settings defined while screen is wider/smaller for row-parent */
 .row-parent {
-  padding: 10px;
   height: auto;
   display: flex;
   flex-direction: column;
   flex-grow: 2;
-  border-style: var(--border-solid);
 }
 .row-child {
   align-content: center;
   border-style: var(--border-solid);
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  height: 200px;
   justify-content: space-between;
+  margin-bottom: 5px;
   margin: 10px;
-  max-width: 50%;
+  max-width: 100%;
   min-width: 300px;
   padding: 10px;
   width: fit-content;
 }
+
 .row-child h2 {
   margin: 10px;
   padding: 10px;
   border-style: var(--border-solid);
 }
-.row-child pre {
-  margin: 10px;
-  padding: 10px;
-  border-style: var(--border-solid);
-}
-.row-child p {
-  max-width: 300px;
-}
-.project-rows {
+.project-rows, .about-me, .all-projects {
   margin: 10px;
   padding: 10px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
   border-style: var(--border-solid);
 }
-.flex-column {
-  border-style: var(--border-solid);
-  display: flex;
+.project-rows, .about-me {
   flex-wrap: nowrap;
+}
+.all-projects {
+  flex-wrap: wrap;
+}
+.about-me-p-content {
+  padding: 5px;
+}
+.project-p-content {
+  padding: 5px;
+}
+.about-me-p-border, .project-p-border {
+  display: flex;
   flex-direction: column;
-  column-count: 3;
-  column-gap: 40px;
-  column-rule-style: solid;
-  column-rule-width: 1px;
-  justify-content: flex-start;
-  align-items: flex-start;
+  padding-right: 5px;
+  min-height: 100%;
+  min-width: 100px;
 }
 
 @media screen and (max-width: 768px) {
-    main,
-    nav {
-      flex-direction: column;
-      margin: 10px;
-    }
-    .row-aside {
-      display:none;
-    }
-    .navbar-toggle {
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      cursor: pointer;
-      font-size: 24px;
-    }
+  main,
+  nav {
+    flex-direction: column;
+    margin: 10px;
+  }
+  /* Hides aside while screen is small */
+  .row-aside {
+    display: none;
+  }
+  /* Controls hamburger nav while the screen is small */
+  .main-nav {
+    list-style-type: none;
+    display: none;
+  }
+  .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+  .active {
+    display: block;
+  }
+  .navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  /* Formatting About Me section while screen is small */
+ .project-rows, 
+ .about-me, 
+ .all-projects {
+    display: block;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-style: var(--border-solid);
+  }
+  .about-me-p-content {
+    display: flex;
+    padding: 5px;
+  }
+  .about-me-p-border,
+  .project-p-border {
+    border-bottom: solid #0b1418;
+    padding: 5px;
+    min-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main,
+  nav {
+    margin: 10px;
+  }
+  header {
+    font-size: 18px;
+    padding: 4px;
+  }
+  /* Define aside settings while screen is large */
+  aside {
+    padding: 1rem;
+    flex: 0 0 200px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  .row-aside {
+    display: block;
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    padding-top: 40px;
+  }
+  .row-aside ul {
+    font-size: 20px;
+    display: block;
+  }
+  .row-aside ul li {
+    padding-bottom: 10px;
+  }
+  /* Sets a margin for row-parent while aside is visible */
+  .row-parent {
+    margin-left: 150px;
   }
 
-  @media screen and (min-width: 768px) {
-    main, nav {
-      margin: 10px
-    }
-    header {
-      font-size: 18px;
-      padding: 4px;
-    }
-    aside {
-      padding: 1rem;
-      flex: 0 0 200px;
-      width: 100%;
-      height: auto;
-      max-width: 100%;
-    }
-    .row-aside {
-      display: block;
-      height: 100%;
-      width: 150px;
-      position: fixed;
-      top: 70px;
-      left: 0;
-      padding-top: 40px;
-    }
-    .row-aside ul {
-      font-size: 20px;
-      display: block;
-    }
-    .row-aside ul li {
-      padding-bottom: 10px;
-    }
-    .row-parent {
-      margin-left: 150px;
-    }
-    .about-me {
-      margin: 10px;
-      padding: 10px;
-      display: block;
-      flex-direction: column;
-      max-height: auto;
-      max-width: 100%;
-      border-style: var(--border-solid);
-    }
-    .about-me p {
-      display: inline-block;
-      align-content: center;
-      justify-content: center;
-      line-height: 1.2;
-      text-indent: 25px;
-    }
-    .about-me-p-content {
-      display: block;
-      padding: 5px;
-    }
-    .about-me-p-border {
-      display: inline-block;
-      border-right: solid #0B1418;
-      padding-right: 5px;
-      height: 100%;
-      max-width: 25%;
-    }
-    /*Toggles burger icon when screen is larger than 768px*/
-    .navbar-toggle {
-      display: none;
-    }
-    .main-nav {
-      display: flex;
-      margin-right: 30px;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-    .main-nav li {
-      margin: 0;
-    }
-    .nav-links {
-      margin-left: 40px;
-    }
-
+  /*Toggles burger icon when screen is larger than 768px*/
+  .navbar-toggle {
+    display: none;
   }
-  @media screen and (max-width: 768px) {
-    .sidebar {
-      min-width: 100%;
-    }
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
   }
-  
-
-/*  
-header {
-  display: grid;
-  place-items: center;
-  font-size: 12px;
-  padding: 4px;
+  .main-nav li {
+    margin: 0;
+  }
+  .nav-links {
+    margin-left: 40px;
+  }
+  .about-me-p-border,
+  .project-p-border {
+    border-right: solid #0b1418;
+  }
 }
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  border: 10px solid orange;
-}
-main {
-  padding: 0;
-  margin: 0;
-  display: grid;
-  flex-wrap: wrap;
-  flex-direction: column;
-  flex-grow: 1;
-  border: 10px solid purple;
-}
-footer {
-  width: 100%;
-  bottom: 0;
-  padding: 20px;
-  text-align: center;
-  background: #13293d;
-  color: #fff;
-  margin-top: auto;
-  border: 10px solid yellow;
-}
-.box-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 1.5rem;
-  justify-items: center;
-  padding: 0;
-  border: 10px solid green;
-}
-.box-flex {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0.5rem;
-  text-align: center;
-  font-size: 1.2rem;
-  background-color: #333333;
-  color: #d9d9d9;
-  border: 10px solid blue;
-}
-.box-flex-center-left {
-  align-items: center;
-  justify-content: flex-start;
-}
-.box-img {
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  max-width: 100%;
-}
-.box-caption {
-  position: absolute;
-  max-width: 200px;
-  margin: 0;
-  padding: 0.5rem;
-  word-break: break-word;
-  font-size: 1.25rem;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: #f2f2f2;
-  align-items: baseline;
-}
-.aside-flex {
-  border: 10px solid brown;
-  display: grid;
-  max-height: 100%;
-}
-.sidebar {
-  background-color: #b9c6ae;
-  padding: 20px;
-  text-align: left;
-  float: left;
-  border: 10px solid blue;
-  align-items: stretch;
-}
-.products-caption {
-  align-items: center;
-  justify-content: flex-start;
-}
-
-*/
