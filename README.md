@@ -36,6 +36,8 @@ Tutorial credit for text overlay on an image to [IMarketINX](https://www.imarket
 
 Tutorial credit for hiding the About Me section on mobile devices or small screens [CodeWellTech](https://www.youtube.com/watch?v=kSEdMoZEGjI)
 
+Tutorial credit for the contact me form [CodingLabWeb](https://www.codinglabweb.com/2021/04/contact-us-form-in-html-and-css-free.html)
+
 Menu bar icon from [Font Awesome](https://fontawesome.com/)
 
 Reused misc. code from previous projects (see Projects listed in this project) for .card display and flexbox formatting

@@ -68,7 +68,7 @@ Some addl settings defined while screen is wider/smaller for row-parent */
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  height: 200px;
+  min-height: 200px;
   justify-content: space-between;
   margin-bottom: 5px;
   margin: 10px;
@@ -77,37 +77,49 @@ Some addl settings defined while screen is wider/smaller for row-parent */
   padding: 10px;
   width: fit-content;
 }
-
 .row-child h2 {
   margin: 10px;
   padding: 10px;
   border-style: var(--border-solid);
+  text-align: center;
 }
-.project-rows, .about-me, .all-projects {
+.project-rows, .about-me, .all-projects, .contact-me {
   margin: 10px;
   padding: 10px;
   display: flex;
   flex-direction: row;
-  border-style: var(--border-solid);
+  flex-grow: 1;
+  justify-content: center;
 }
-.project-rows, .about-me {
+.project-rows, .about-me, .contact-me {
   flex-wrap: nowrap;
 }
 .all-projects {
   flex-wrap: wrap;
 }
-.about-me-p-content {
+.about-me-p-content, .project-p-content, .contact-me-p-content {
   padding: 5px;
 }
-.project-p-content {
-  padding: 5px;
-}
-.about-me-p-border, .project-p-border {
+.about-me-p-border, .project-p-border, .contact-me-p-border {
   display: flex;
   flex-direction: column;
+  text-align: right;  
   padding-right: 5px;
   min-height: 100%;
-  min-width: 100px;
+  min-width: 120px;
+}
+.input-box input {
+  height: 100%;
+  max-width: 300px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.message-box input {
+  height: 100px;
 }
 
 @media screen and (max-width: 768px) {
@@ -141,22 +153,20 @@ Some addl settings defined while screen is wider/smaller for row-parent */
   }
   /* Formatting About Me section while screen is small */
  .project-rows, 
- .about-me, 
- .all-projects {
+ .about-me,
+ .contact-me {
     display: block;
     flex-direction: row;
     flex-wrap: nowrap;
-    border-style: var(--border-solid);
   }
-  .about-me-p-content {
-    display: flex;
-    padding: 5px;
-  }
+
   .about-me-p-border,
-  .project-p-border {
+  .project-p-border,
+  .contact-me-p-border {
     border-bottom: solid #0b1418;
     padding: 5px;
     min-width: 100%;
+    text-align: center;  
   }
 }
 
@@ -215,7 +225,8 @@ Some addl settings defined while screen is wider/smaller for row-parent */
     margin-left: 40px;
   }
   .about-me-p-border,
-  .project-p-border {
+  .project-p-border,
+  .contact-me-p-border {
     border-right: solid #0b1418;
   }
 }
