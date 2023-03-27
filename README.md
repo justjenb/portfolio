@@ -46,6 +46,11 @@ Reused misc. code from previous projects (see Projects listed in this project) f
 
 [Photo](https://unsplash.com/photos/6JVlSdgMacE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) by [Pankaj Patel](https://unsplash.com/@pankajpatel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com)
 
+[Photo by Miguel Á. Padriñán](https://www.pexels.com/photo/four-letter-tiles-1591061/)
+
+[Photo by Pixabay](https://www.pexels.com/photo/letter-blocks-247819/)
+
+Submissable form courtesy of [formsubmit.co](https://formsubmit.co/)
 
 ## License
 

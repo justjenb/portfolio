@@ -14,12 +14,12 @@
 <body>
     <!-- Header and Navbar -->
     <nav class="navbar">
-        <header>
+        <header class="navbar">
             <h1 class="header-gradient" id="home">Jen Butler</h1>
         </header>
-        <span class="navbar-toggle" id="js-navbar-toggle">
+        <button class="navbar-toggle" id="js-navbar-toggle">
             <i class="fa-solid fa-bars" style="color: #000000;"></i>
-        </span>
+        </button>
         <ul class="main-nav" id="js-menu">
             <li><a href="#aboutme" class="nav-links">About Me</a></li>
             <li><a href="#projects" class="nav-links">Projects</a></li>
@@ -29,18 +29,19 @@
     <main>
         <section class="row-parent">
             <aside class="row-aside">
-                <ul>
+                <menu>
                     <li><a href="#home" class="aside-nav-links">Home</a></li>
                     <li><a href="#aboutme" class="aside-nav-links">About Me</a></li>
                     <li><a href="#projects" class="aside-nav-links">Projects</a></li>
                     <li><a href="#contactme" class="aside-nav-links">Contact Me</a></li>
-                </ul>
+                </menu>
             </aside>
             <section class="about-me" id="aboutme">
                 <section class="about-me-p-border">
-                    <p>About Me</p>
+                    <h2>About Me</h2>
                 </section>
                 <section>
+                    <img class="about-me-p-content about-me-photo" src="/portfolio/assets/css/images/jenb.jpg">
                     <p class="about-me-p-content">
                         As an IT professional with a decade of diverse experience, I am passionate
                         about leveraging technology to drive efficiency, optimize performance, and deliver exceptional
@@ -52,69 +53,71 @@
                 </section>
             </section>
             <section class="project-rows" id="projects">
-                <section class="project-p-border">
-                    <p>Projects</p>
-                </section>
-                <section class="all-projects">
-                    <section class="row-child">
+                <div class="project-p-border">
+                    <h2>Projects</h2>
+                </div>
+                <div class="all-projects">
+                    <div class="row-child html-photo prework-sg">
                         <a href="https://github.com/justjenb/prework-study-guide">
                             <h2>Prework Study Guide</h2>
                         </a>
-                    </section>
-                    <section class="row-child">
+                    </div>
+                    <div class="row-child css-photo">
                         <a href="https://github.com/justjenb/module1challenge">
                             <h2>Module 1 Challenge</h2>
                         </a>
-                    </section>
-                    <section class="row-child">
+                    </div>
+                    <div class="row-child">
                         <a href="https://github.com/justjenb/module1-miniproject">
                             <h2>Module 1 Miniproject</h2>
                         </a>
-                    </section>
-                    <section class="row-child">
+                    </div>
+                    <div class="row-child">
                         <a href="https://github.com/justjenb/module2miniproject">
                             <h2>Module 2 Miniproject</h2>
                         </a>
-                    </section>
-                </section>
+                    </div>
             </section>
-            <section class="contact-me" id="contactme">
-                <section class="contact-me-p-border">
-                    <p>Contact Me</p>
-                </section>
-                <section class="contact-me-p-content">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <section class="address1">Location</section>
-                    <section class="address2">Somewhere, USA</section>
-                </section>
-                <section class="contact-me-p-content">
-                    <i class="fas fa-phone-alt"></i>
-                    <section class="address1">Phone</section>
-                    <section class="address2">###-###-####</section>
-                </section>
-                <section class="contact-me-p-content">
-                    <i class="fas fa-envelope"></i>
-                    <section class="address1">Email</section>
-                    <section class="address2">address@domain.com</section>
-                </section>
-                <section class="contact-me-p-content">
-                    <p>If you have any questions for me or would like to collaborate, please feel free to reach out.</p>
-                    <form action="#">
-                        <section class="input-box">
-                            <input type="text" placeholder="Enter your name">
-                        </section>
-                        <section class="input-box">
-                            <input type="text" placeholder="Enter your email">
-                        </section>
-                        <section class="input-box message-box">
-                            <input type="text" placeholder="Write your message here">
-                        </section>
-                        <section class="send-button">
-                            <button type="submit" value="text"><i class="fa fa-arrow-circle-right fa-lg"></i>Send</button>
-                        </section>
+            <address class="contact-me" id="contactme">
+                <div class="contact-me-p-border">
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="contact-me-p-content">
+                    <div class="contact-me-field">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>Location</div>
+                        <div>Somewhere, USA</div>
+                    </div>
+                    <div class="contact-me-field">
+                        <a href="https://github.com/justjenb"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="contact-me-field">
+                        <a href="https://www.linkedin.com/in/jennifer-butler-28b61b34/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <form class="form-fields" action="https://formsubmit.co/9787fc709348f0592e054802098f00e7"
+                        method="POST">
+                        <p>If you have any questions for me or would like to collaborate, 
+                            please feel free to reach out.
+                        </p>
+                        <div class="input-box">
+                            <input class="bot-honey" type="text" name="_honey">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-box message-box">
+                            <textarea class="message-box" type="text" placeholder="Write your message here" name="message"
+                                required></textarea>
+                        </div>
+                        <div class="input-box">
+                            <button type="submit">Send</button>
+                        </div>
                     </form>
-                </section>
-            </section>
+                </div>
+            </address>
         </section>
     </main>
     <footer>
