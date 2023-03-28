@@ -30,6 +30,8 @@ No installation required, but if you want to run this locally:
 
 ## Credits
 
+Reused misc. code from previous projects (see Projects listed in this project) for .card display and flexbox formatting
+
 Tutorial credit for responsive mobile menu to [ITNEXT](https://itnext.io/how-to-build-a-responsive-navbar-using-flexbox-and-javascript-eb0af24f19bf)
 
 Tutorial credit for text overlay on an image to [IMarketINX](https://www.imarketinx.de/artikel/text-centered-on-image.html)
@@ -38,9 +40,9 @@ Tutorial credit for hiding the About Me section on mobile devices or small scree
 
 Tutorial credit for the contact me form [CodingLabWeb](https://www.codinglabweb.com/2021/04/contact-us-form-in-html-and-css-free.html)
 
-Menu bar icon from [Font Awesome](https://fontawesome.com/)
+Anonymous submissable form service courtesy of [formsubmit.co](https://formsubmit.co/)
 
-Reused misc. code from previous projects (see Projects listed in this project) for .card display and flexbox formatting
+Menu bar icon from [Font Awesome](https://fontawesome.com/)
 
 [Photo](https://unsplash.com/photos/_t-l5FFH8VA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) by [Jackson Sophat](https://unsplash.com/@jacksonsophat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com)
 
@@ -49,8 +51,6 @@ Reused misc. code from previous projects (see Projects listed in this project) f
 [Photo by Miguel Á. Padriñán](https://www.pexels.com/photo/four-letter-tiles-1591061/)
 
 [Photo by Pixabay](https://www.pexels.com/photo/letter-blocks-247819/)
-
-Submissable form courtesy of [formsubmit.co](https://formsubmit.co/)
 
 ## License
 

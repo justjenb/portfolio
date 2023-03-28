@@ -80,14 +80,16 @@ Some addl settings defined while screen is wider/smaller for row-parent */
 .row-child h2,
 .project-rows, 
 .about-me, 
-.contact-me {
+.contact-me, 
+.about-me-p-content, 
+.project-p-content, 
+.contact-me-p-content {
   margin: 10px;
   padding: 10px;
 }
 
 .row-child {
   align-content: center;
-  border-style: var(--border-solid);
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -106,18 +108,11 @@ Some addl settings defined while screen is wider/smaller for row-parent */
   width: 100%;
 }
 
-.project-rows, .about-me, .all-projects, .contact-me-p-content {
+.project-rows, .about-me, .all-projects, .contact-me-p-content, .contact-me {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
   justify-content: center;
-}
-
-.contact-me {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  justify-content: left;
 }
 
 .project-rows, .about-me, .contact-me {
@@ -128,10 +123,8 @@ Some addl settings defined while screen is wider/smaller for row-parent */
   flex-wrap: wrap;
 }
 
-.about-me-p-content, 
-.project-p-content, 
-.contact-me-p-content {
-  padding: 10px;
+.all-projects {
+  padding-bottom: 20px;
 }
 
 .contact-me-field {
@@ -144,6 +137,7 @@ Some addl settings defined while screen is wider/smaller for row-parent */
 
 .contact-me-field i, div {
   display: block;
+  align-items: center;
 }
 
 .contact-me-field a, .row-child a {
@@ -172,6 +166,10 @@ form div input, form div textarea, form p {
   text-align: center;
 }
 
+.form-block {
+  display: block;
+}
+
 .about-me-p-border, 
 .project-p-border, 
 .contact-me-p-border {
@@ -181,6 +179,13 @@ form div input, form div textarea, form p {
   padding-right: 5px;
   min-height: 100%;
   min-width: 120px;
+  position: relative;
+}
+
+.about-me-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .input-box {
@@ -199,17 +204,28 @@ form div input, form div textarea, form p {
 }
 
 .html-photo {
-  background-image: url(./images/html.jpg);
+  background-image: url(/portfolio/assets/images/html.jpg);
+}
+
+.html-photo2 {
+  background-image: url(/portfolio/assets/images/html2.jpg);
+
 }
 
 .css-photo {
-  background-image: url(./images/css.jpg);
+  background-image: url(/portfolio/assets/images/css.jpg);
+}
+
+.learn-photo {
+  background-image: url(/portfolio/assets/images/learn.jpg);
 }
 
 .css-photo,
-.html-photo {
-  background-size: cover;
-  background-repeat: no-repeat;
+.html-photo, 
+.html-photo2,
+.learn-photo {
+  background-position: center center;
+  background-size: 100% auto;
 }
 
 .bot-honey {
@@ -267,9 +283,17 @@ form div input, form div textarea, form p {
   .project-p-border,
   .contact-me-p-border {
     border-bottom: solid #0b1418;
-    padding: 5px;
     min-width: 100%;
     text-align: center; 
+  }
+
+  .row-child {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: fit-content;
+    margin: 0;
   }
 }
 
@@ -316,7 +340,8 @@ form div input, form div textarea, form p {
 
   /* Sets a margin for row-parent while aside is visible */
   .row-parent {
-    margin-left: 150px;
+    margin-left: 300px;
+    margin-right: 300px;
   }
 
   /*Toggles burger icon when screen is larger than 768px*/
