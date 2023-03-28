@@ -288,12 +288,7 @@ form div input, form div textarea, form p {
   }
 
   .row-child {
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    width: fit-content;
-    margin: 0;
+    margin-bottom: 20px;
   }
 }
 
