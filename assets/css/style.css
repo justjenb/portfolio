@@ -223,9 +223,15 @@ form div input, form div textarea, form p {
   background-image: url(/portfolio/assets/images/learn.jpg);
 }
 
+.ipinfo-photo {
+  background-image: url(/portfolio/assets/images/ipinfo.png);
+}
+
+
 .css-photo,
 .html-photo, 
 .html-photo2,
+.ipinfo-photo,
 .learn-photo {
   border-radius: 20px;
   background-position: center center;
@@ -241,6 +247,7 @@ form div input, form div textarea, form p {
 .css-photo:hover,
 .html-photo:hover, 
 .html-photo2:hover,
+.ipinfo-photo:hover,
 .learn-photo:hover {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
