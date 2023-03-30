@@ -40,6 +40,8 @@ Tutorial credit for hiding the About Me section on mobile devices or small scree
 
 Tutorial credit for the contact me form [CodingLabWeb](https://www.codinglabweb.com/2021/04/contact-us-form-in-html-and-css-free.html)
 
+Tutorial credit for the grayscale hover images [Anthony Moss](https://codepen.io/AnthonyMoss/pen/RwwyQQ)
+
 Anonymous submissable form service courtesy of [formsubmit.co](https://formsubmit.co/)
 
 Menu bar icon from [Font Awesome](https://fontawesome.com/)

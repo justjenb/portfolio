@@ -1,19 +1,19 @@
+/* setting some root, universal and body elements */
 :root {
   --color-white: #eee;
   --color-black: black;
   --font-style: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  --font-size: 20px;
-  --font-size-large: 40px;
+  --font-size: 18px;
+  --font-size-large: 48px;
   --border-dashed: dashed;
   --border-solid: solid;
   --border-outset: outset;
   --background-gradient: linear-gradient(to left, #a8dadc, #eee 0%, #5496b1 100%);
-  --header-gradient: linear-gradient(60deg, #0b1418, #38677a);
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 10;
+  padding: 10;
   font-style: var(--font-style);
   font-size: var(--font-size);
   box-sizing: border-box;
@@ -28,22 +28,14 @@ body {
   font-family: var(--font-style);
 }
 
-/* Set no wrap for headers */
 h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
+  padding: 15px;
 }
 
-div {
-  display: inline;
-}
-
-/* Set gradient coloring for class targeting the h1 element */
+/* Set gradient coloring h1 element */
 .header-gradient {
-  font-size: 48px;
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-image: var(--header-gradient);
-  color: transparent;
+  font-size: var(--font-size-large);
 }
 
 /* Nav element base settings */
@@ -56,7 +48,7 @@ div {
   align-items: center;
 }
 
-/* Targeting the ul main nav links on the top of the page with some formatting */
+/* Targeting main nav links with some formatting */
 .nav-links,
 .aside-nav-links {
   text-decoration: none;
@@ -65,27 +57,16 @@ div {
 .nav-links:hover,
 .aside-nav-links:hover {
   color: #046b99;
+  font-size: 20px;
 }
 
-/* Starting to format the main section with the aside, about me, project etc.
-Some addl settings defined while screen is wider/smaller for row-parent */
+/* Starting to format the main section with the aside, about me, projects, contact me area
+Some addl settings defined while screen is wider/smaller */
 .row-parent {
   height: auto;
   display: flex;
   flex-direction: column;
   flex-grow: 2;
-}
-
-.row-child,
-.row-child h2,
-.project-rows, 
-.about-me, 
-.contact-me, 
-.about-me-p-content, 
-.project-p-content, 
-.contact-me-p-content {
-  margin: 10px;
-  padding: 10px;
 }
 
 .row-child {
@@ -100,26 +81,37 @@ Some addl settings defined while screen is wider/smaller for row-parent */
   width: fit-content;
 }
 
-.row-child h2 {
-  text-align: center;
+.row-child,
+.project-rows, 
+.about-me, 
+.contact-me {
+  margin: 10px;
+  padding: 10px;
 }
 
 .prework-sg {
   width: 100%;
 }
 
-.project-rows, .about-me, .all-projects, .contact-me-p-content, .contact-me {
+.project-rows, 
+.about-me, 
+.all-projects, 
+.contact-me-p-content, 
+.contact-me {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
   justify-content: center;
 }
 
-.project-rows, .about-me, .contact-me {
+.project-rows, 
+.about-me, 
+.contact-me {
   flex-wrap: nowrap;
 }
 
-.all-projects, .contact-me-p-content {
+.all-projects, 
+.contact-me-p-content {
   flex-wrap: wrap;
 }
 
@@ -140,7 +132,8 @@ Some addl settings defined while screen is wider/smaller for row-parent */
   align-items: center;
 }
 
-.contact-me-field a, .row-child a {
+.contact-me-field a, 
+.row-child a {
   text-decoration: none;
 }
 .row-child a {
@@ -148,26 +141,9 @@ Some addl settings defined while screen is wider/smaller for row-parent */
   width: fit-content;
   justify-content: center;
   align-items: flex-end;
-  opacity: 85%;
-}
-
-.form-fields {
-  align-self: flex-end;
-  width: min-content;
-}
-
-address div div {
-  text-align: center;
-}
-
-form div input, form div textarea, form p {
-  max-width: 50%;
-  min-width: 300px;
-  text-align: center;
-}
-
-.form-block {
-  display: block;
+  border-style: outset;
+  border-width: 4px;
+  border-radius: 10px;
 }
 
 .about-me-p-border, 
@@ -180,12 +156,31 @@ form div input, form div textarea, form p {
   min-height: 100%;
   min-width: 120px;
   position: relative;
+  border-right: solid #0b1418;
 }
 
-.about-me-photo {
+/* Form formatting */
+
+.centerme {
+  text-align: center;
+}
+
+form div input, form div textarea, form p {
+  max-width: 50%;
+  min-width: 300px;
+  text-align: left;
+  border-radius: 10px;
+  padding: 2px;
+  margin-top: 5px;
+}
+
+.form-fields {
+  align-self: flex-end;
+  width: min-content;
+}
+
+.form-block {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .input-box {
@@ -196,11 +191,20 @@ form div input, form div textarea, form p {
   border: none;
   outline: none;
   font-size: 16px;
-  border-radius: 6px;
+  border-radius: 20px;
   resize: none;
 }
 .message-box {
   height: 10em;
+}
+
+/* Photo assignments and formatting */
+
+.about-me-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
 }
 
 .html-photo {
@@ -209,7 +213,6 @@ form div input, form div textarea, form p {
 
 .html-photo2 {
   background-image: url(/portfolio/assets/images/html2.jpg);
-
 }
 
 .css-photo {
@@ -224,9 +227,30 @@ form div input, form div textarea, form p {
 .html-photo, 
 .html-photo2,
 .learn-photo {
+  border-radius: 20px;
   background-position: center center;
   background-size: 100% auto;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%)
 }
+
+.css-photo:hover,
+.html-photo:hover, 
+.html-photo2:hover,
+.learn-photo:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+
+/* This is a fake field to weed out bots who might try to submit emails on the contact form */
 
 .bot-honey {
   display: none;
@@ -283,6 +307,7 @@ form div input, form div textarea, form p {
   .project-p-border,
   .contact-me-p-border {
     border-bottom: solid #0b1418;
+    border-right: none;
     min-width: 100%;
     text-align: center; 
   }
@@ -311,8 +336,7 @@ form div input, form div textarea, form p {
     height: auto;
     max-width: 100%;
   }
-
-
+  
   .row-aside {
     display: inline-block;
     height: 100%;
@@ -355,13 +379,4 @@ form div input, form div textarea, form p {
     margin: 15px;
   }
 
-  .nav-links {
-    margin-left: 40px;
-  }
-
-  .about-me-p-border,
-  .project-p-border,
-  .contact-me-p-border {
-    border-right: solid #0b1418;
-  }
 }
