@@ -28,6 +28,12 @@ No installation required, but if you want to run this locally:
 
 6. If desired, open Developer Tools and the Console window with index.html selected and review the output.
 
+## Preview
+
+[Link to site](https://justjenb.github.io/portfolio/)
+
+![Screenshot of portfolio](./assets/images/screenshot.png)
+
 ## Credits
 
 Reused misc. code from previous projects (see Projects listed in this project) for .card display and flexbox formatting
