@@ -236,7 +236,8 @@ form div input, form div textarea, form p {
 .html-photo, 
 .html-photo2,
 .ipinfo-photo,
-.learn-photo {
+.learn-photo,
+.pgen-photo {
   border-radius: 20px;
   background-position: center center;
   background-size: 100% auto;
@@ -252,7 +253,8 @@ form div input, form div textarea, form p {
 .html-photo:hover, 
 .html-photo2:hover,
 .ipinfo-photo:hover,
-.learn-photo:hover {
+.learn-photo:hover,
+.pgen-photo:hover {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
