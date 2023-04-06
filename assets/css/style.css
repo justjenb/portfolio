@@ -89,7 +89,7 @@ Some addl settings defined while screen is wider/smaller */
   padding: 10px;
 }
 
-.prework-sg {
+.me-first {
   width: 100%;
 }
 
@@ -225,6 +225,10 @@ form div input, form div textarea, form p {
 
 .ipinfo-photo {
   background-image: url(/portfolio/assets/images/ipinfo.png);
+}
+
+.pgen-photo {
+  background-image: url(/portfolio/assets/images/pgen.png);
 }
 
 
